@@ -1,0 +1,5 @@
+{
+    "which": "link",
+    "interval": 10000,
+    "timeout": 60000
+}
