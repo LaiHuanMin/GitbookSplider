@@ -1,0 +1,27 @@
+{
+  "name": "GitbookSplider",
+  "version": "1.0.0",
+  "description": "抓取Gitbook中文书籍",
+  "main": "index.js",
+  "scripts": {
+    "splider": "node ./splider/index.js",
+    "system": "node ./system/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaiHuanMin/GitbookSplider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaiHuanMin/GitbookSplider/issues"
+  },
+  "homepage": "https://github.com/LaiHuanMin/GitbookSplider#readme",
+  "dependencies": {
+    "banyan": "^0.0.1",
+    "bunyan": "^1.8.12",
+    "moment": "^2.18.1",
+    "superagent": "^3.6.0"
+  }
+}
