@@ -47,7 +47,7 @@ function create (mongoose) {
     var {SpliderUtil, MongoUtil} = global
     try{
       var result = yield this.insertMany(linkList);
-      MongoUtil.log.info("插入每页的link列表成功：",JSON.stringify(linkList))      
+      MongoUtil.log.info("插入每页的link列表成功")      
     }catch(e){
       MongoUtil.log.error("在插入每页的link列表过程中，产生了错误："+JSON.stringify(e))      
     }

@@ -205,3 +205,12 @@
 {"name":"splider","hostname":"SC-10","pid":236344,"level":30,"msg":"上一次获取的页码是第0页，本次任务从该页开始","time":"2017-09-19T09:35:36.800Z","v":0}
 {"name":"splider","hostname":"SC-10","pid":236344,"level":30,"msg":"正在获取第0页的数据，请稍候","time":"2017-09-19T09:35:36.801Z","v":0}
 {"name":"splider","hostname":"SC-10","pid":236344,"level":30,"msg":"第0页的数据获取完毕，进入10000毫秒的延时阶段","time":"2017-09-19T09:37:35.621Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238072,"level":30,"msg":"initSpliderTask初始化完毕，最多能到达的页数为1461","time":"2017-09-19T09:39:01.088Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238072,"level":30,"msg":"上一次获取的页码是第0页，本次任务从该页开始","time":"2017-09-19T09:39:01.100Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238072,"level":30,"msg":"正在获取第0页的数据，请稍候","time":"2017-09-19T09:39:01.100Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238072,"level":30,"msg":"第0页的数据获取完毕，进入10000毫秒的延时阶段","time":"2017-09-19T09:39:02.470Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238400,"level":30,"msg":"initSpliderTask初始化完毕，最多能到达的页数为1461","time":"2017-09-19T09:39:16.564Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238400,"level":30,"msg":"上一次获取的页码是第0页，本次任务从该页开始","time":"2017-09-19T09:39:16.579Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238400,"level":30,"msg":"正在获取第0页的数据，请稍候","time":"2017-09-19T09:39:16.580Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238400,"level":30,"msg":"第0页的数据获取完毕，进入10000毫秒的延时阶段","time":"2017-09-19T09:39:18.234Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":238400,"level":30,"msg":"正在获取第1页的数据，请稍候","time":"2017-09-19T09:39:28.234Z","v":0}
