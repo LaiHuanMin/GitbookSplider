@@ -8,7 +8,7 @@ function create (mongoose) {
     url: String, //链接
     bookName: String, //书名
     bookContentDesc: String, //书内容写了什么
-    bookTimeDesc: String, //书什么时候商家
+    bookUpdateDesc: String, //书什么时候更新
     getLinkTime: Date, //获取Link链接时的时间
     getContentTime: Date, //获取内容时的时间（要完整下载之后才能设置）
     pageIndex: Number, //该资源处于哪一页
