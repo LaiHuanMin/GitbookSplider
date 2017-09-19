@@ -1,10 +1,10 @@
 # config配置文件
 
 ## fetch.json
-获取内容使用download，获取连接使用link，两者都获取就用both 
+获取连接使用link，两者都获取就用both。这里没有download，主要是感觉这样太怪了，如果需要下载有link而没有下载的，后期添加这个功能。
 ```
 {
-    "which": "download" 
+    "which": "link" 
 }
 ```
 
