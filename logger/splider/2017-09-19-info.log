@@ -80,3 +80,25 @@
 {"name":"splider","hostname":"SC-10","pid":147280,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1460","time":"2017-09-19T06:54:58.674Z","v":0}
 {"name":"splider","hostname":"SC-10","pid":147304,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1460","time":"2017-09-19T06:58:11.252Z","v":0}
 {"name":"splider","hostname":"SC-10","pid":145820,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1460","time":"2017-09-19T06:59:04.995Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":165420,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:23:21.010Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":165392,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:26:39.003Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":165392,"level":50,"msg":"initSpliderTask处错误产生： {}","time":"2017-09-19T07:26:39.003Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":167652,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:28:02.799Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":167652,"level":50,"msg":"initSpliderTask处错误产生： {}","time":"2017-09-19T07:28:02.800Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":168552,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:28:40.463Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":168552,"level":50,"msg":"initSpliderTask处错误产生： {}","time":"2017-09-19T07:29:28.042Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":168860,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:29:40.041Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":168860,"level":50,"msg":"initSpliderTask处错误产生： {\"message\":\"Schema hasn't been registered for model \\\"modelName\\\".\\nUse mongoose.model(name, schema)\",\"name\":\"MissingSchemaError\"}","time":"2017-09-19T07:29:40.042Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":168388,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:29:58.170Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":171036,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:33:05.909Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":171068,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:33:54.893Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":172128,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:34:21.979Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":173380,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:35:41.769Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":174844,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:36:57.220Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":175656,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:38:21.290Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":177180,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:40:58.938Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":178520,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:41:32.624Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":176036,"level":30,"msg":"initSpliderTask初始化完毕，本次任务最终的页码为1461","time":"2017-09-19T07:43:42.994Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":176036,"level":30,"msg":"上一次获取的页码是第1111111111页，本次任务从该页开始","time":"2017-09-19T07:43:43.017Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":106836,"level":30,"msg":"initSpliderTask初始化完毕，最多能到达的页数为1461","time":"2017-09-19T07:47:48.287Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":106836,"level":30,"msg":"上一次获取的页码是第0页，本次任务从该页开始","time":"2017-09-19T07:47:48.299Z","v":0}
