@@ -12,8 +12,9 @@ global.SpliderUtil = {
 
 //先初始化数据库，确保成功才继续下去
 initDbTask().then(() => {
-  initSpliderTask().then(maxPage => {
+  initSpliderTask().then(({maxPage,$html}) => {
     log.info('initSpliderTask初始化完毕，本次任务最终的页码为' + maxPage)
+    runSpliderTask(maxPage)
   }).catch(fail => {
     log.error('initSpliderTask处错误产生：', JSON.stringify(fail))
   })

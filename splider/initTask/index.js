@@ -1,6 +1,4 @@
 var $ = require("cheerio");
-var request = require("cheerio");
-var fetch = require("fetch");
 var querystring = require("querystring");
 var axios = require("axios");
 
@@ -20,9 +18,9 @@ function initTask() {
                         .next()
                         .find("a")[0].firstChild.data)
         if (maxPage === undefined) {
-          throw new Error("无法找到所指定的最大页面值，可能页面已经变更！");
+          throw new Error("无法找到所指定的最大页面值，可能页面结构已经变更！");
         }
-        resolve(maxPage);
+        resolve({maxPage,$html});
       })
       .catch(fail => {
         reject(fail);

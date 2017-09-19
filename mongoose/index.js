@@ -1,8 +1,8 @@
 var mongoConfig = require('../config/mongo.json')
 var mongoose = require('mongoose')
 var log = require('./bunyan/index.js')
-var SCHEMA_actionInfo = require('./schema/actionInfo/')
-var SCHEMA_locationFile = require('./schema/locationFile/')
+var createSpliderDetailSchema = require('./schema/spliderDetail/')
+var createspliderStatusSchema = require('./schema/spliderStatus/')
 
 function initTask () {
   return new Promise((resolve, reject) => {
@@ -16,37 +16,37 @@ function initTask () {
       log.info(`已经连接Mongodb数据库，地址:${address}，端口号:${port}，数据库名:${dbName}`)
 
       // 初始化Schema和Model，并且设置global的值
-      var actionInfoSchema = SCHEMA_actionInfo(mongoose)
-      var locationFileSchema = SCHEMA_locationFile(mongoose)
-      var actionInfoModel = mongoose.model(
-        'actionInfo',
-        actionInfoSchema,
-        'actionInfo'
+      var spliderDetailSchema = createSpliderDetailSchema(mongoose)
+      var spliderStatusSchema = createspliderStatusSchema(mongoose)
+      var spliderDetailModel = mongoose.model(
+        'spliderDetail',
+        spliderDetailSchema,
+        'spliderDetail'
       )
-      var locationFileModel = mongoose.model(
-        'locationFile',
-        locationFileSchema,
-        'locationFile'
+      var spliderStatusModel = mongoose.model(
+        'spliderStatus',
+        spliderStatusSchema,
+        'spliderStatus'
       )
 
       global.MongoUtil = {
         log,
         mongoose,
         schema: {
-          actionInfo: actionInfoSchema,
-          locationFile: locationFileSchema
+          spliderDetail: spliderDetailSchema,
+          spliderStatus: spliderStatusSchema
         },
         model: {
-          actionInfo: null,
-          locationFile: null
+          spliderDetail: spliderDetailModel,
+          spliderStatus: spliderStatusModel
         }
       }
 
-      resolve(global.MongoUtil);
+      resolve(global.MongoUtil)
     })
     connection.on('error', fail => {
       log.error(`连接Mongodb数据库失败，地址:${address}，端口号:${port}，数据库名:${dbName}`)
-      reject(fail);
+      reject(fail)
     })
     connection.on('disconnected', () => {
       log.error(`停止连接Mongodb数据库，地址:${address}，端口号:${port}，数据库名:${dbName}`)
