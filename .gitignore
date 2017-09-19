@@ -5,3 +5,5 @@ node_modules
 devDir
 
 /*.log
+
+/testCo.js
