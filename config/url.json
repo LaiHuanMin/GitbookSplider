@@ -1,5 +1,5 @@
 {
-  "base": "https://www.gitbook.com/explore",
+  "baseUrl": "https://www.gitbook.com/explore",
   "lang": "zh",
   "langName": "中文"
 }

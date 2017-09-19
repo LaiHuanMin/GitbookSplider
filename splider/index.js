@@ -1,14 +1,16 @@
 var urlConfig = require("../config/url.json");
-var request = require("superagent");
 var log = require("./bunyan/");
-var fs = require("fs");
-var path = require("path");
+var runTask = require("./runTask/");
+var initTask = require("./initTask/");
 
-var baseUrl = urlConfig.base;
-var lang = urlConfig.lang;
-var pageIndex = 0;
+var { baseUrl, lang, langName } = urlConfig;
 
-log.info("begin")
+global.AppUtil = {
+  urlConfig,
+  log
+};
+
+initTask();
 
 // request
 //   .get(baseUrl)
