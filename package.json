@@ -23,6 +23,7 @@
     "bunyan": "^1.8.12",
     "cheerio": "^1.0.0-rc.2",
     "moment": "^2.18.1",
+    "mongoose": "^4.11.12",
     "superagent": "^3.6.0"
   }
 }

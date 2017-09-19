@@ -2,11 +2,12 @@ var urlConfig = require("../config/url.json");
 var log = require("./bunyan/");
 var runTask = require("./runTask/");
 var initTask = require("./initTask/");
+var db = require("../mongoose/index.js")
 
-
-global.AppUtil = {
+global.SpliderUtil = {
   urlConfig,
-  log
+  log,
+  db
 };
 
 initTask().then(maxPage=>{
