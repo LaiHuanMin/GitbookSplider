@@ -27,11 +27,29 @@ function create (mongoose) {
    * 获取最新的最近的页码，如果数据为空，则pageIndex从0开始
    */
   Schema.statics.getRecentPageIndex = function* (){
-    var result = yield this.find().sort({pageIndex: -1}).exec();
-    if(result.length === 0){
-      return 0;
-    }else{
-      return result.shift().pageIndex;
+    var {SpliderUtil, MongoUtil} = global
+    try{
+      var result = yield this.find().sort({pageIndex: -1}).exec();
+      MongoUtil.log.info("获取上一次的页码成功")      
+      if(result.length === 0){
+        return 0;
+      }else{
+        return result.shift().pageIndex;
+      }
+    }catch(e){
+      MongoUtil.log.error("在获取上一次的页码过程中，产生了错误："+JSON.stringify(e))      
+    }
+  }
+  /**
+   * 当完成每一页的getAllLink的时候，将该页所有的信息都insertMany到数据库
+   */
+  Schema.statics.pushEachPageDetail = function* (linkList){
+    var {SpliderUtil, MongoUtil} = global
+    try{
+      var result = yield this.insertMany(linkList);
+      MongoUtil.log.info("插入每页的link列表成功：",JSON.stringify(linkList))      
+    }catch(e){
+      MongoUtil.log.error("在插入每页的link列表过程中，产生了错误："+JSON.stringify(e))      
     }
   }
   return Schema

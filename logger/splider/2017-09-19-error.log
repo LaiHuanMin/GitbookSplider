@@ -16,3 +16,4 @@
 {"name":"splider","hostname":"SC-10","pid":167652,"level":50,"msg":"initSpliderTask处错误产生： {}","time":"2017-09-19T07:28:02.800Z","v":0}
 {"name":"splider","hostname":"SC-10","pid":168552,"level":50,"msg":"initSpliderTask处错误产生： {}","time":"2017-09-19T07:29:28.042Z","v":0}
 {"name":"splider","hostname":"SC-10","pid":168860,"level":50,"msg":"initSpliderTask处错误产生： {\"message\":\"Schema hasn't been registered for model \\\"modelName\\\".\\nUse mongoose.model(name, schema)\",\"name\":\"MissingSchemaError\"}","time":"2017-09-19T07:29:40.042Z","v":0}
+{"name":"splider","hostname":"SC-10","pid":230476,"level":50,"msg":"在获取第0页的时候产生了错误，{}","time":"2017-09-19T09:27:49.115Z","v":0}

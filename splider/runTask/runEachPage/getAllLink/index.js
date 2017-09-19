@@ -16,7 +16,7 @@ function * getAllLink (currentPage) {
     var anchorList = $html.find(".Books .Book .book-infos")
     var anchorListLen = anchorList.length
     var linkList = []
-    for(let anchorIndex = 0;anchorIndex < anchorListLen;anchorIndexd++){
+    for(let anchorIndex = 0;anchorIndex < anchorListLen;anchorIndex++){
         var eachItem = anchorList.eq(anchorIndex)
         var titleAnchor = eachItem.find(".title a");
         var href = titleAnchor.attr("href");
@@ -35,9 +35,9 @@ function * getAllLink (currentPage) {
             pageIndex: currentPage, //该资源处于哪一页
         })
     }
-    console.log(linkList);
+    yield MongoUtil.model.spliderDetail.pushEachPageDetail(linkList)
   } catch(e) {
-    SpliderUtil.error(`在获取第${currentPage}页的时候产生了错误，${JSON.stringify(e)}`)
+    SpliderUtil.log.error(`在获取第${currentPage}页的时候产生了错误，${JSON.stringify(e)}`)
   }
 }
 
