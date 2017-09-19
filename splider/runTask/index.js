@@ -18,7 +18,7 @@ function runTask (maxPage) {
         yield new Promise(resolve=>{
             setTimeout(function(){
                 resolve();
-            },interval)
+            },interval+(parseInt(Math.random() * 10000)))
         })
     }
   })

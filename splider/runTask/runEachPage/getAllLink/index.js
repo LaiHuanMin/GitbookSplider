@@ -8,7 +8,8 @@ function * getAllLink (currentPage) {
   var { baseUrl, lang, langName } = urlConfig
   try {
     var res = yield axios({
-      url: `${baseUrl}?${querystring.stringify({ lang, page: currentPage })}`
+      url: `${baseUrl}?${querystring.stringify({ lang, page: currentPage })}`,
+      timeout
     })
     //处理数据
     var {data} = res
